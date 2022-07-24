@@ -1,0 +1,33 @@
+#
+# Configuration file for black-ink theme
+#
+
+title: "ucinereos's site"
+author:
+  name: ucinereo
+  email: nicola.studer2000@gmail.com
+
+profile-image: /assets/imgs/profile.png
+description: >
+  Hey! This is my awesome description which can be changed in `_config.yml`.
+  I work in [company XY](/) where I research [some stuff](/).
+  In my free free time I like to go out with friends or code till late in the night.
+  I'm interested in computer graphics, compiler design and machine learning. <br/><br/>
+
+  If you like my work or are interested in the research I do, feel free to contact [me](/)!
+
+black-ink:
+  date_format: "%Y-%m-%d"
+
+  # generate social link
+  social_links:
+    github: ucinereo
+    linkedin: ucinereo
+    stackoverflow: ucinereo
+    instagram: ucinereo
+    twitter: ucinereo
+    youtube: ucinereo
+
+# Build settings
+theme: black-ink
+markdown: kramdown

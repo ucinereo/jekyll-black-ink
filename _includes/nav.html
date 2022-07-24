@@ -1,0 +1,11 @@
+<nav class="nav">
+    <ul class="list">
+        {% for item in site.pages %}
+            {% unless item.title == null or item.url == '/page' or item.url contains "/404.html" %}
+                <li class="item {% if item.url == page.url %}item--current{% endif %}">
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                </li>
+            {% endunless %}
+        {% endfor %}
+    </ul>
+</nav>

@@ -1,0 +1,11 @@
+{%- assign social = site.black-ink.social_links -%}
+
+<ul class="social-media-list">
+  {%- if social.github -%}<li class="item"><a href="https://github.com/{{ social.github | escape }}">GitHub <i class="fa-brands fa-github"></i></a> </li>{%- endif -%}
+  {%- if social.stackoverflow -%}<li class="item"><a href="https://stackoverflow.com/users/{{ social.stackoverflow | escape }}">Stackoverflow <i class="fa-brands fa-stack-overflow"></i></a> </li>{%- endif -%}
+  {%- if social.instagram -%}<li class="item"><a href="https://www.instagram.com/{{ social.instagram | escape }}">Instagram <i class="fa-brands fa-instagram"></i></a> </li>{%- endif -%}
+  {%- if social.linkedin -%}<li class="item"><a href="https://linkedin.com/{{ social.linkedin | escape }}">LinkedIn <i class="fa-brands fa-linkedin"></i> </a></li>{%- endif -%}
+  {%- if social.twitter -%}<li class="item"><a href="https://twitter.com/{{ social.twitter | escape }}">Twitter <i class="fa-brands fa-twitter"></i></a> </li>{%- endif -%}
+  {%- if social.youtube -%}<li class="item"><a href="https://www.youtube.com/{{ social.youtube | escape }}">Youtube <i class="fa-brands fa-youtube"></i></a> </li>{%- endif -%}
+  {%- if site.author.email -%}<li class="item"><a href="mailto:{{ site.author.email | escape }}">Mail <i class="fa-solid fa-envelope"></i></a> </li>{%- endif -%}
+</ul>

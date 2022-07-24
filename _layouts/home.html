@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="description-wrapper">
+    {% if site.description != null and site.description != '' %}
+        <div class="description-text">
+            <p>
+                {{ site.description | markdownify }}
+            </p>
+        </div>
+    {% endif %}
+    {% if site.profile-image != null and site.profile-image != '' %}
+        <img id="description-img" src="{{ site.profile-image | relative_url }}" alt="Profile Picture">
+    {% endif %}
+</div>
+
+{% include social.html %}
+
+{% if site.posts.size > 0 %}
+    {% include posts_list.html %}
+{% endif %}
+
+{{ content }}

@@ -1,0 +1,86 @@
+// Home Description
+.description-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5rem;
+    @media only screen and (max-width: 670px) {
+        gap: 0;
+    }
+}
+
+.description-text {
+    flex-basis: 60%;
+
+    @media only screen and (max-width: 670px) {
+        flex-basis: 100%;
+    }
+}
+
+#description-img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    display: block;
+}
+
+// Post List Formatting
+.post-list-section {
+    margin: 2rem 0;
+}
+
+.post-list-heading {
+    margin: 0;
+}
+
+.post-list {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+    
+    li {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    a:not(:hover),
+    .post_list a:visited {
+        color: $base-font-color;
+    }
+}
+
+.post-list-meta {
+    color: $base-font-color-light;
+    margin-right: 2rem;
+}
+
+.post-meta {
+    display: flex;
+    flex-direction: row;
+    color: $base-font-color-light;
+
+    .post-meta-info:not(:last-child):after {
+        content: " /";
+        margin: 0;
+        padding-right: .2rem;
+    }
+}
+
+.err404 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.err404text {
+    font-size: 10em;
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// Default variables
+$base-font-size: 14px !default;
+$base-font-small-size: 12px !default;
+$base-font-weight: 400 !default;
+$base-site-width: 48rem !default;
+$base-line-height: 1.5 !default;
+
+// Color variables
+$base-background: #FAFAFA !default;
+$base-background-light: #F0F0F0 !default;
+$base-font-color: #090909 !default;
+$base-font-color-light: rgb(97, 98, 104) !default;
+$base-highlight: #2563eb  !default;
+$base-highlight-light: #5386f3 !default;
+
+// Hyperlink Colors
+$link-base-color: $base-highlight !default;
+$link-hover-color: #5e8df5 !default;
+$link-visited-color: $base-highlight !default;
+
+// Import frameworks & theme styles
+@import
+    "normalize",
+    "base",
+    "layout",
+    "highlight"
+;

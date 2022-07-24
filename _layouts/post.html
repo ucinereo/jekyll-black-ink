@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="post-article">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <div class="post-meta">
+        {% assign date_format = site.black-ink.date_format %}
+        <time class="post-meta-info dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time>
+        {%- if page.author -%}
+            <span class="post-meta-info post-author">{{ page.author }}</span>
+        {%- endif -%}
+        <div class="post-meta-info tags">
+            {% for tag in site.tags %}
+                <code>{{ tag[0] | escape }}</code>
+            {% endfor %}
+        </div>
+    </div>
+    {{ content }}
+</article>
