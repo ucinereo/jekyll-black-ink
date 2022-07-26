@@ -2,15 +2,15 @@
 Minimal typewriter like portfolio theme for jekyll.
 
 ## Features
-- Clear and minimalistic basic design which might need some adjustments and tweaking to be used as a complete theme
+- Clear and minimalistic basic design
 - Basic styled markdown support
 - Responsive UI
 - Configurable colors which can be changed as `sass` variables.
 
 ## Missing Features (Might be implemented in the feature)
 - Post categories handling
-- Design for collections
-- Navigation through posts
+- Generic design for collections
+- Navigation elements for post articles
 
 ## Installation as a GitHub Pages remote theme
 
@@ -45,6 +45,8 @@ To the default `page`, `post` and `default` black-ink implements a new layout ca
 | `highlight.scss` | Code highlighting |
 | `_base.scss` | Main stylesheet |
 | `_layout.scss` | Stylesheet for specific layouts |
+| `custom-styles.scss` | Stylesheet to allow overwriting the basic stylesheet |
+| `custom-variables.scss` | Stylesheet to overwrite existing variables used by the theme |
 
 ## Configuration
 All configurable options are described in the `_config.yml` file.

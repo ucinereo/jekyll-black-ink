@@ -23,7 +23,9 @@ $link-visited-color: $base-highlight !default;
 // Import frameworks & theme styles
 @import
     "normalize",
+    "custom-variables",
     "base",
     "layout",
-    "highlight"
+    "highlight",
+    "custom-styles"
 ;
